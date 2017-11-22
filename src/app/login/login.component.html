@@ -1,0 +1,6 @@
+<div class='Login'>
+	<input [(ngModel)]="email" class="input" placeholder="email">
+	<input [(ngModel)]="password" class="input" placeholder="password">
+	<app-two-button [email]="email" [password]="password" ></app-two-button>
+	<p id="Error" style="color:red">The email doesn't exist or password is wrong, try it again!</p>
+</div>

@@ -1,0 +1,30 @@
+<div class="Survey">
+	<label>Please fill out the survey:</label>
+
+	<label for="Q1">Q1: What is your front framework preference?</label> 
+	<input [(ngModel)]="frontFramework" name="Q1" class="input" placeholder="Front framework preference">
+
+	<label for="Q2">Q2: What is your operating system preference?</label> 
+	<input [(ngModel)]="operatingSystem" name="Q2" class="input" placeholder="Operating system preference">
+
+	<label for="Q3">Q3: what 2 technology trends interest you the most and why?</label> 
+	<input [(ngModel)]="twoTechInterest" name="Q3" class="input" placeholder="2 technology trends">
+
+	<label for="Q4">Q4: What are your hobbies/ interests other than technology?</label> 
+	<input [(ngModel)]="hobbies" name="Q4" class="input" placeholder="hobbies">
+
+	<label for="Q5">Q5: What is an application of technology that improves upon your hobbies/interests?</label> 
+	<input [(ngModel)]="applicationFromHobby" name="Q5" class="input" placeholder="Application from hobby">
+
+	<label for="Q6">Q6: Describe your dream job</label> 
+	<input [(ngModel)]="dreamJob" name="Q6" class="input" placeholder="Dream Job">
+
+	<label for="Q7">Q7: What is your programming language of choice?</label> 
+	<input [(ngModel)]="programmingLanguage" name="Q7" class="input" placeholder="Programming language of choice">
+
+	<button (click)="submit()">Submit!</button>
+</div>
+
+<div class="chatbot">
+	<app-chat-bot></app-chat-bot>
+</div>

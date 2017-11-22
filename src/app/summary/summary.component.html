@@ -1,0 +1,54 @@
+
+<div class="SurveySummary">
+	<h3>Survey Summary:</h3>
+	<p>There are {{dataset.length}} people have taken this survey</p>
+
+	<label for="number">How many popular words do you wanna see for each question?</label> 
+	<input [(ngModel)]="number" name="number" class="input">
+	<button (click)="update()">Update!</button>
+
+
+	<p>Q1: What is your front framework preference?</p> 
+	<label >The most popular {{number}} words are:</label>
+		<ul *ngFor="let word of summary.popWords1">
+			<li>{{word.key}}: {{word.value}} times</li>
+		</ul>
+	
+
+	<p>Q2: What is your operating system preference?</p> 
+	<label >The most popular {{number}} words are:</label>
+		<ul *ngFor="let word of summary.popWords2">
+			<li>{{word.key}}: {{word.value}} times</li>
+		</ul>
+
+	<p>Q3: what 2 technology trends interest you the most and why?</p> 
+	<label >The most popular {{number}} words are:</label>
+		<ul *ngFor="let word of summary.popWords3">
+			<li>{{word.key}}: {{word.value}} times</li>
+		</ul>
+
+	<p>Q4: What are your hobbies/ interests other than technology?</p> 
+	<label >The most popular {{number}} words are:</label>
+		<ul *ngFor="let word of summary.popWords4">
+			<li>{{word.key}}: {{word.value}} times</li>
+		</ul>
+
+	<p>Q5: What is an application of technology that improves upon your hobbies/interests?</p> 
+	<label >The most popular {{number}} words are:</label>
+		<ul *ngFor="let word of summary.popWords5">
+			<li>{{word.key}}: {{word.value}} times</li>
+		</ul>
+
+	<p>Q6: Describe your dream job</p> 
+	<label >The most popular {{number}} words are:</label>
+		<ul *ngFor="let word of summary.popWords6">
+			<li>{{word.key}}: {{word.value}} times</li>
+		</ul>
+
+	<p>Q7: What is your programming language of choice?</p> 
+	<label >The most popular {{number}} words are:</label>
+		<ul *ngFor="let word of summary.popWords7">
+			<li>{{word.key}}: {{word.value}} times</li>
+		</ul>
+
+</div>

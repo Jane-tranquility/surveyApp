@@ -1,0 +1,21 @@
+<div id='chatbotButton' style="position: absolute; bottom: 10; right: 0">
+    <button class="largebutton" (click)="display()">ChatBox</button>
+</div>
+
+<div id='bodybox' style="position: absolute; bottom: 0; right: 0">
+  <div id="cross">
+    <button (click)="close()" style="position:absolute; top: 0; right: 5px">Close</button>
+  </div>
+  <div id='chatborder'>
+    <!-- <div *ngFor="let record of data">
+        <div *ngFor="let key of keys">
+            <p class="chatlog">{{record[key]}}</p>
+        </div>  
+    </div> -->
+
+    <p>{{answer}}</p>
+    
+    <input [(ngModel)]="chat" type="text" name="chat" id="chatbox" placeholder="Type here" onfocus="placeHolder()">
+    <button (click)="send()" style="position:absolute; right:50px">Send</button>
+  </div>
+</div>

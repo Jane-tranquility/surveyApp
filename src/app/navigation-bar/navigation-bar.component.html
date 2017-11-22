@@ -1,0 +1,15 @@
+ <div id='NavLinks'>
+ 	<h4 class='header'>Navigations:</h4>
+ 	<nav>
+		<a [routerLink]="['/Home Page']">Home</a>
+		<a [routerLink]="['/Survey Summary']">Survey Summary</a>
+		<a [routerLink]="['/User Profile Page']">User Profile</a>
+	</nav>
+</div>
+
+
+<div id="content">
+	<div class="container">
+		<router-outlet></router-outlet> 
+	</div>
+</div>
